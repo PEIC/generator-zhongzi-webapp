@@ -16,14 +16,14 @@ npm install -g yo
 然后我们把tpldemo构建器安装到本地。
 
 ```
-npm install -g generator-tpldemo
+npm install -g generator-zhongzi-webapp
 ```
 建立项目文件夹并进入这个文件夹。
 
 执行
 
 ```
-yo tpldemo
+yo zhongzi-webapp
 ```
 来通过tpldemo构建器创建项目。
 这时安装依赖的npm模块可能会花好长时间。安装完成后项目文件结构如下。
@@ -58,18 +58,11 @@ grunt的配置信息如上。
 
 ####默认方法：
 
-输入
-```
-grunt
-```执行。
+输入```grunt```执行。
 
 下面的任务会自动执行，大概流程是先判断本地是否存在编译过的文件夹，没有的话自动执行build方法，有就跳过build阶段，接下来connect建立本地服务器，然后是open打开浏览器，最后执行watch监听文件变化，watch的功能是当监听的文件发生改动时执行定义的任务。less文件发生变化就编译样式到开发文件夹和编译后的文件夹，当html文件发生变化includes编译html，图片添加时自动拷贝到编译文件夹即预览文件夹。
 ####build方法
-输入
-```
-grunt build
-```
-执行。
+输入```grunt build```执行。
 
 这时会执行build方法，build自动执行的大概流程是先clean删除之前编译好的文件夹，然后依次编译html，编译样式，拷贝静态资源。
 ####imagmin方法
