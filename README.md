@@ -7,7 +7,7 @@ grunt是运行在node上的命令行工具。
 npm install -g grunt-cli
 ```
 除了grunt外我们还要用到yeoman，它主要用来搭建项目基础的结构，相当于给项目搭建一个基础的脚手架。
-yeoman提供了许多不同项目的generator供安装，我们在这里直接使用我们编写并上传到npm上的zhongzi-webapp。
+yeoman提供了许多不同项目的generator供安装，我们在这里直接使用我们编写并发布到npm上的zhongzi-webapp。
 yeoman的安装命令为
 
 ```
@@ -50,7 +50,6 @@ yo zhongzi-webapp
 └── package.json
 ```
 项目的新建到这里就结束了，grunt的相关配置也已经在项目中定义好了。下面就进入开发流程了。
-grunt的配置信息如上。
 
 主要实现的功能有：less编译、文件的复制、文件的删除、图片的优化、监听、页面分模块编译、静态服务器、打开浏览器。
 
