@@ -1,6 +1,6 @@
 {
   "name": "generator-zhongzi-webapp",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Yeoman generator",
   "license": "MIT",
   "repository": "peic/generator-zhongzi-webapp",

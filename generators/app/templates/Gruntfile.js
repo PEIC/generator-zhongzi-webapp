@@ -5,11 +5,11 @@ module.exports=function(grunt){
 	require('time-grunt')(grunt);
 
 	var config={
-		app:'app',            //l
-		dist:'build',
-		port:'8200',
-		lrPort:35730,
-		defaultBrowser:'Google Chrome'
+		app:'app',            //开发文件夹
+		dist:'build',		  //编译输出文件夹
+		port:'8200',		  //本地服务器端口
+		lrPort:35730,		  //liveload实时预览服务端口
+		defaultBrowser:'Google Chrome'      //调试浏览器端口
 	}
     var lrPort = config.lrPort;
     var lrSnippet = require('connect-livereload')({ port: lrPort });
@@ -113,5 +113,5 @@ module.exports=function(grunt){
 		grunt.task.run(['connect','open','watch']);
 	});
 	grunt.registerTask('build', ['clean:build','includes','less','copy:build']);
-	grunt.registerTask('imgmin', ['clean:buildImg','imagemin']);
+	grunt.registerTask('imgmin', ['clean:build','imagemin']);
 }

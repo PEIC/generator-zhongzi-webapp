@@ -1,7 +1,7 @@
 {
-  "name": "zhongzi-tpl",
+  "name": "zhongzi-webapp",
   "version": "1.0.0",
-  "description": "this is a tpl for zhongzijinfu FE",
+  "description": "this is a generator for zhongzijinfu FE",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
