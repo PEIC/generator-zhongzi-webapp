@@ -3,17 +3,17 @@ grunt是运行在node上的命令行工具。
 
 首先安装grunt
 
-```
+```zhongzi-webapp
 npm install -g grunt-cli
 ```
 除了grunt外我们还要用到yeoman，它主要用来搭建项目基础的结构，相当于给项目搭建一个基础的脚手架。
-yeoman提供了许多不同项目的generator供安装，我们在这里直接使用我们编写并上传到npm上的tpldemo。
+yeoman提供了许多不同项目的generator供安装，我们在这里直接使用我们编写并上传到npm上的zhongzi-webapp。
 yeoman的安装命令为
 
 ```
 npm install -g yo
 ```
-然后我们把tpldemo构建器安装到本地。
+然后我们把zhongzi-webapp构建器安装到本地。
 
 ```
 npm install -g generator-zhongzi-webapp
@@ -25,7 +25,7 @@ npm install -g generator-zhongzi-webapp
 ```
 yo zhongzi-webapp
 ```
-来通过tpldemo构建器创建项目。
+来通过zhongzi-webapp构建器创建项目。
 这时安装依赖的npm模块可能会花好长时间。安装完成后项目文件结构如下。
 
 ```
