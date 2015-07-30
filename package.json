@@ -1,0 +1,29 @@
+{
+  "name": "generator-zhongzi-webapp",
+  "version": "0.0.2",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "repository": "peic/generator-zhongzi-webapp",
+  "author": {
+    "name": "dayu",
+    "email": "peixiaochuang@zhongzijinfu.com",
+    "url": "https://github.com/peic"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.19.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
